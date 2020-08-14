@@ -7,8 +7,33 @@
         motion:constraintSetEnd="@+id/end"
         motion:constraintSetStart="@id/start"
         motion:duration="1000">
-       <KeyFrameSet>
-       </KeyFrameSet>
+
+        <KeyFrameSet >
+            <KeyAttribute
+                motion:motionTarget="@+id/progressBar"
+                motion:framePosition="0"
+                android:alpha="1"
+                />
+            <KeyAttribute
+                motion:motionTarget="@+id/progressBar"
+                motion:framePosition="50"
+                android:alpha="0.5"
+                 />
+            <KeyAttribute
+                motion:motionTarget="@+id/progressBar"
+                motion:framePosition="70"
+                android:visibility="gone"
+                android:alpha="0"
+               />
+
+            <KeyAttribute
+                motion:motionTarget="@+id/progressBar"
+                android:visibility="gone"
+                motion:framePosition="100"
+                android:alpha="0"
+               />
+        </KeyFrameSet>
+
     </Transition>
 
     <ConstraintSet android:id="@+id/start">

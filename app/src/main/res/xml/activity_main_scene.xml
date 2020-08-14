@@ -12,6 +12,12 @@
     </Transition>
 
     <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:layout_marginTop="336dp"
+            motion:layout_editor_absoluteX="175dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/progressBar"
+            motion:layout_constraintStart_toStartOf="parent" />
     </ConstraintSet>
 
     <ConstraintSet android:id="@+id/end">
